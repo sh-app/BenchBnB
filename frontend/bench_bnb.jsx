@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ConfigureStore from './store/store.js';
+import { Provider } from 'react-redux';
 import Root from './components/root';
 import {login} from './actions/session_actions';
 

@@ -8,7 +8,6 @@ export default class BenchIndex extends React.Component {
   }
 
   componentDidMount() {
-    debugger
     this.props.requestBenches();
   }
 

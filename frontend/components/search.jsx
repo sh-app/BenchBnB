@@ -11,7 +11,7 @@ export default class Search extends React.Component {
     return(
       <div>
         <BenchIndex benches={this.props.benches} requestBenches={this.props.requestBenches}/>
-        <BenchMap />
+        <BenchMap benches={this.props.benches}/>
       </div>
     );
   }

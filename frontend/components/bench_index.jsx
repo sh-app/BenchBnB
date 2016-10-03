@@ -8,14 +8,14 @@ export default class BenchIndex extends React.Component {
   }
 
   componentDidMount() {
+    debugger
     this.props.requestBenches();
   }
 
   render() {
-    let allBenches = selectBench(this.props.benches).map((bench)=> {
+    let allBenches = selectBench(this.props.benches.benches).map((bench)=> {
       return <BenchIndexItem key={bench.id} bench={bench} /> ;
     });
-
     return (
       <section>
         <h3>All Benches!</h3>

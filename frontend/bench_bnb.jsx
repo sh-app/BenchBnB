@@ -5,13 +5,6 @@ import { Provider } from 'react-redux';
 import Root from './components/root';
 import {login} from './actions/session_actions';
 
-
-//for testing only
-// const user = {user:{username: 'user1', password: 'password1'}};
-// const success= (user) => ( store.dispatch(receiveCurrentUser(user)));
-// const error= (data) => ( console.log(data) );
-//-----
-
 document.addEventListener("DOMContentLoaded", ()=> {
   let store;
   if (window.currentUser) {
